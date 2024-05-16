@@ -36,16 +36,12 @@ function display_date() {
     var monthdiff = (yeardiff * 12) + (currentdate.getMonth() - inputdate.getMonth());
     console.log(monthdiff);
 
+
     var print_data=document.createElement("div");
     print_data.className = "main1"
-    print_data.innerHTML=`Given date:${inputdate}<br>Year:${yeardiff}<br>Month:${monthdiff}<br>Day:${daydiff}<br>
-    Hour:${hoursdiff}<br>Minutes:${mindiff}<br>Seconds:${secondsdiff}<br>Milliseconds:${millisecdiff}`
-    // print_data.innerHTML=`Month:${monthdiff}`
-    // print_data.innerHTML=`Day:${daydiff}`
-    // print_data.innerHTML=`Hour:${hoursdiff}`
-    // print_data.innerHTML=`Minutes:${mindiff}`
-    // print_data.innerHTML=`Seconds:${secondsdiff}`
-    // print_data.innerHTML=`Milliseconds:${millisecdiff}`
+    print_data.innerHTML=`Given date: ${inputdate}<br>Year: ${yeardiff}<br>Month: ${monthdiff}<br>Day: ${daydiff}<br>
+    Hour: ${hoursdiff}<br>Minutes: ${mindiff}<br>Seconds: ${secondsdiff}<br>Milliseconds: ${millisecdiff}`
+    
 
     document.body.append(print_data)
 }
